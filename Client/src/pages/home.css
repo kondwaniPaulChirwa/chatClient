@@ -1,0 +1,312 @@
+.home{
+    height: 100vh;
+    background-color: #18181b;
+    display: flex;
+    justify-content: center;
+
+
+}
+.hContainer{
+    display: flex;
+    gap: 20px;
+    width: 1200px;
+    background-color: #18181b;
+    color: white;
+}
+.chatSection{
+    flex: 3;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.messageSection{
+    flex: 3;
+    padding: 15px;
+    background-color: black;
+}
+.onlineUsers{
+    flex: 1;
+    padding: 15px;
+    background-color: black;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.notification{
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #26262c;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 16px;
+    gap: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color: gray;
+}
+.chatslower{
+    flex: 1;
+    display: flex;
+}
+.lchats{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    margin-top: 10px;
+    gap:20px;
+}
+.searchls{
+    border: 1px solid #26262c;
+    align-items: center;
+    position: relative;
+}
+.searchitemslist{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    background-color: black;
+    z-index: 1000000;
+    left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.lchats>div>input{
+    flex: 1;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 1em;
+}
+.lchats>div>span{
+    font-size:20px;
+    padding: 5px;
+    color: gray;
+}
+.lmessages{
+    flex: 2;
+    border-left: 1px solid #26262c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #26262c;
+    font-size: 4em;
+   
+}
+.llmessages{
+    flex: 2;
+    border-left: 1px solid #26262c;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    position: relative;
+}
+.transmessage{
+    flex: 1;
+    background-color: red;
+}
+.pFace{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #26262c;
+    overflow: hidden;
+}
+.pFace>img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.pFaces{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #26262c;
+    overflow: hidden;
+}
+.pFaces>img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+.chatitemconatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 80vh;
+    overflow-y: scroll; 
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  .chatitemconatiner:hover::-webkit-scrollbar-thumb {
+    background: #26262c;
+  }
+.chatitem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    border-bottom: 1px solid #26262c;
+    padding-bottom: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.Selectedchatitem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding-left: 2px;
+    border-left: 1px solid #00c274;
+    border-bottom: 1px solid #26262c;
+    padding-bottom: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.userchats{
+    display: flex;
+    flex-direction: column;
+}
+.cmessage{
+    font-size: 0.7em;
+    color: gray;
+}
+.sender{
+    font-size: 1em;
+    color: gray;
+    font-weight: 500;
+    position: relative;
+}
+.eltime{
+    position: absolute;
+    color: #00c274;
+    right: 2px;
+    top: 5px;
+    font-size: 0.8em;
+}
+.online{
+    color: #00c274;
+}
+.messagesend{
+    position: absolute;
+    bottom: 10px;
+    border: 1px solid #26262c;
+    display: flex;
+    align-items: center;
+    left:0;
+    right: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.messagesend>input{
+    flex: 1;
+    height: 50px;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 1em;
+    padding-left: 10px;
+}
+.sendicon{
+    padding-right: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.iconcou{
+    color: gray;
+}
+.messagearea{
+    height: 69vh; 
+    overflow-y: scroll;
+}
+.messagearea:hover::-webkit-scrollbar-thumb {
+    background: #26262c;
+  }
+  .singletext{
+  
+    margin-top: 10px;
+    background-color: #26262c;
+    padding: 5px;
+  }
+  .owner{
+    display: flex;
+    position: relative;
+    justify-content: right;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 0.8em;
+  }
+  .senderpart{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.8em;
+  }
+  .actualtext{
+    background-color: #26262c;
+    padding: 10px;
+    max-width: 80%;
+    border-radius: 10px 0px 10px 10px;
+  }
+  .senderactualtext{
+    background-color: #00a865;
+    color: white;
+    padding: 10px;
+    max-width: 80%;
+    border-radius: 0px 10px 10px 10px;
+  }
+  .timestamp{
+    position: absolute;
+    bottom: -8px;
+    font-size: 10px;
+    color: #00c274;
+  }
+  .secondary{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -3px;
+    right:-3px;
+  }
+  .success{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00c274;
+    position: absolute;
+    top: -3px;
+    right:-3px;
+  }
+  .logout{
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+  }
